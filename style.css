@@ -1,0 +1,73 @@
+*{
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.top{
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: snow;
+    box-shadow: 0px 0px 10px black;
+}
+
+.primary, .secondary {
+    display: flex;
+}
+
+.primary, .secondary li,a{
+    padding-right: 15px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.tertiary{
+    list-style: none;
+    text-decoration: none;
+    padding-top: 2px;
+}
+
+.main{
+    display: flex;
+}
+
+.carousel{
+    background-color: gray;
+    width: auto;
+    height: 400px;
+}
+
+.channel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.live{
+    background-image: url("https://via.placeholder.com/395x200");
+    width: 395px;
+    height: 200px;
+    padding: 5px;
+    background-repeat: no-repeat;
+    
+}
+
+@media screen and (max-width: 900px) {
+    .top{
+        flex-direction: column;
+    }
+
+    .primary, .secondary{
+        flex-direction: column;
+    }
+
+    .tertiary{
+        display: none;
+    }
+
+    .channel{
+        justify-content: center;
+    }
+}
